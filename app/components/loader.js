@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 export default class Loader extends Component {
   render() {
     return (
-      <View style={styles.loaderView}>
+      <View style={this.props.container && styles.loaderView}>
         <ActivityIndicator size="large" />
       </View>
     );
